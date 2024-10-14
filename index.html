@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplo Menu Responsive</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d188054eba.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  </script>
+
+</head>
+
+<body>
+  <header class="ancho">
+    <figure class="logo">
+      <img src="imagenes/pullrequest-logo.svg" alt="" />
+    </figure>
+    <a href="#" id="iconomenu">
+      <i class="fas fa-bars fa-1x"></i>
+    </a>
+  </header>
+  <nav class="ancho" id="cajamenu">
+    <a href="#">Inicio</a>
+    <a href="#">Empresa</a>
+    <a href="#">Servicios</a>
+    <a href="#">Clientes</a>
+    <a href="#">Ubicacion</a>
+    <a href="#">Contactanos</a>
+  </nav>
+  <section class="contenedor_info ancho">
+    <article class="info">
+      <h1>Creacion de paginas web</h1>
+      <h3>Curso básico de HTML5 y CSS3</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+        voluptates hic animi praesentium nulla cumque aliquam optio obcaecati
+        alias, quos voluptatem officia ullam adipisci assumenda architecto
+        ipsa voluptate nihil totam.
+      </p>
+      <br />
+      <a href="#" id="btn_mostrar">ver</a>
+    </article>
+    <figure class="foto" id="fotocodigo">
+      <img src="imagenes/foto_pullrequest.svg" alt="Foto Aleatoria" />
+    </figure>
+  </section>
+  <footer class="ancho">
+    <a href="">@hectorcetina</a>
+  </footer>
+
+  <!-- FUNCIONES DE JAVASCRIPT -->
+  <script>
+    // SCRIPT PARA EL MENU DESPLEGABLE
+    $("#iconomenu").click(function () {
+      $("#cajamenu").slideToggle();
+    });
+
+  </script>
+
+
+
+  <!-- <script>
+
+    $("#iconomenu").click(function () {
+      $("nav").slideToggle();
+    });
+
+    $("#leer").click(function () {
+      $("#slidefoto").toggle("fade");
+    })
+
+  </script> -->
+
+
+</body>
+
+</html>
